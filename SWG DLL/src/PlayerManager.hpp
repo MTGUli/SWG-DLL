@@ -9,6 +9,7 @@ public:
 	inline float GetPlayerSpeed( void ) { return m_fPlayerSpeed; }
 
 	void SetPlayerSpeed( float NewSpeed );
+	void SetZCoord( float ZCoord );
 private:
 	/* 0x0000 */ BYTE _00[ 0x5C ];
 	/* 0x005C */ float m_fXCoord;

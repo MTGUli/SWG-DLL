@@ -22,10 +22,12 @@
 MakeVar( float*, g_fFPSLimit, 0x019446D0)
 MakeVar( bool*, g_bScreenRefesh, 0x004237A7)
 MakeVar( bool*, g_bForceClientClose, 0x019085A2)
+MakeVar( bool*, g_bShowNetworkIDs, 0x0192CDB0)
+MakeVar( bool*, g_bSinglePlayerMode, 0x01908858)
+MakeVar( bool*, g_bEnableGodMode, 0x01919410)
 MakeVar( PlayerManager**, g_LocalPlayer, 0x0191BFB4)
 // Function Pointers
 MakeFnc( void, __fastcall, ( void ), Game_Loop, 0x004237B0)
-
 
 #undef MakeFnc
 #undef MakeVar
