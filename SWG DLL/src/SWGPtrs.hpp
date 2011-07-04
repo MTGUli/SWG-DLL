@@ -28,6 +28,9 @@ MakeVar( bool*, g_bEnableGodMode, 0x01919410)
 MakeVar( PlayerManager**, g_LocalPlayer, 0x0191BFB4)
 // Function Pointers
 MakeFnc( void, __fastcall, ( void ), Game_Loop, 0x004237B0)
+MakeFnc( bool, __cdecl, (char const*, char const*, bool), getKeyBool, 0x00A9CEF0)
+MakeFnc( int, __cdecl, (char const*, char const*, int), getKeyInt, 0x00A9CEA0)
+MakeFnc( float, __cdecl, (char const*, char const*, float), getKeyFloat, 0x00A9CF40)
 
 #undef MakeFnc
 #undef MakeVar
